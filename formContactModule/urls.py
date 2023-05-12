@@ -27,9 +27,9 @@ from formContactApp.models.form import Form
 
 urlpatterns = [
     #URL´s del formulario
-    path('form/all/', views.FormView.as_view()), #ver todos los productos
-    path('form/filter/<int:pk>/', views.FormFilterView.as_view()), #ver productos filtrados
-    path('form/create/', views.FormCreateView.as_view()), #crear un producto
-    path('form/delete/<int:pk>/', views.FormDeleteView.as_view()), #borrar un producto
-    path('form/update/<int:pk>/', views.FormUpdateView.as_view()), #actualizar un producto
+    path('form/all/', views.FormView.as_view(), name='contacto_list'), #ver todos los contactos
+    path('form/filter/<int:pk>/', views.FormFilterView.as_view(), name='form_filter'), #ver contactos filtrados
+    path('form/create/', views.FormCreateView.as_view(), name='form_create'), #crear un contacto
+    path('form/delete/<int:pk>/', views.FormDeleteView.as_view(), name='form_delete'), #borrar un contacto
+    path('form/update/<int:pk>/', views.FormUpdateView.as_view(), name='form_update'), #actualizar un contacto
 ]

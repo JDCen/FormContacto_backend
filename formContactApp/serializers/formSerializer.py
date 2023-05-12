@@ -1,7 +1,7 @@
 from rest_framework                 import serializers
 from formContactApp.models.form     import Form
 
-class FormSerializer(serializers.ModelSerializer):
+class FormSerializer(serializers.ModelSerializer):  
 
     class Meta:
         model = Form
