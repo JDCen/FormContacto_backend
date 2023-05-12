@@ -12,7 +12,7 @@ class FormView (generics.ListAPIView):
     serializer_class=FormSerializer
 
 #Traer un producto filtrado 
-class FormFilteredView (generics.ListAPIView):
+class FormFilterView (generics.ListAPIView):
     serializer_class = FormSerializer
 
 #Crear un producto
